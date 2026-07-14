@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brahma 7.7</title>
+    <title>Brahma</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -234,8 +234,8 @@
         
         <!-- Header -->
         <div class="p-4 flex items-center gap-3">
-            <img src="img_arts\brahma-removebg-preview.png" onerror="this.outerHTML='<div class=\'w-8 h-8 fallback-logo\'></div>'" alt="Brahma Logo" class="w-8 h-8 object-contain drop-shadow-[0_0_10px_rgba(59,130,246,0.5)]">
-            <span class="font-bold text-lg tracking-tight text-white">Brahma <span class="text-xs text-gray-500 bg-dark-800 px-1.5 py-0.5 rounded border border-dark-700">7.7</span></span>
+            <img src="brahma-removebg-preview.png" onerror="this.outerHTML='<div class=\'w-8 h-8 fallback-logo\'></div>'" alt="Brahma Logo" class="w-8 h-8 object-contain drop-shadow-[0_0_10px_rgba(59,130,246,0.5)]">
+            <span class="font-bold text-lg tracking-tight text-white">Brahma<span>
         </div>
 
         <div class="px-3 pb-2 flex gap-2">
@@ -412,9 +412,9 @@
 
         <!-- Welcome State -->
         <div id="welcome-screen" class="absolute inset-0 flex flex-col items-center justify-center p-6 z-10 transition-opacity duration-300">
-            <img src="img_arts\brahma-removebg-preview.png" onerror="this.outerHTML='<div class=\'w-16 h-16 fallback-logo mb-6\'></div>'" alt="Brahma Logo" class="w-20 h-20 object-contain drop-shadow-[0_0_20px_rgba(59,130,246,0.3)] mb-6 animate-pop">
+            <img src="brahma-removebg-preview.png" onerror="this.outerHTML='<div class=\'w-16 h-16 fallback-logo mb-6\'></div>'" alt="Brahma Logo" class="w-20 h-20 object-contain drop-shadow-[0_0_20px_rgba(59,130,246,0.3)] mb-6 animate-pop">
             <h1 class="text-2xl md:text-4xl font-semibold mb-2 text-center text-white tracking-tight">How can I help you today?</h1>
-            <p class="text-gray-400 text-center text-sm md:text-base max-w-md">Access advanced intelligence, creative tools, and seamless integrations in workspace 7.7.</p>
+            <p class="text-gray-400 text-center text-sm md:text-base max-w-md">Access advanced intelligence, creative tools, and seamless integrations in workspace.</p>
         </div>
 
         <!-- Chat History Container -->
@@ -448,7 +448,7 @@
                         <div class="text-sm font-medium text-gray-200">Files & Media</div>
                     </button>
 
-                    <div class="col-span-3 text-xs font-semibold text-gray-500 mt-2 mb-1 px-1 border-t border-dark-800 pt-3">ADVANCED TOOLS (DEMO)</div>
+                    <div class="col-span-3 text-xs font-semibold text-gray-500 mt-2 mb-1 px-1 border-t border-dark-800 pt-3">ADVANCED TOOLS</div>
                     
                     <button onclick="openAdvancedTool('Canvas')" class="flex flex-col items-center justify-center gap-1 p-3 rounded-xl hover:bg-dark-800 transition-colors text-center border border-transparent hover:border-dark-700 group">
                         <div class="text-purple-400 mb-1 bg-purple-400/10 p-2 rounded-full group-hover:scale-110 transition-transform"><i data-lucide="layout-template" class="w-5 h-5"></i></div>
@@ -496,7 +496,7 @@
                     </div>
                 </div>
                 <div class="text-center mt-3">
-                    <span class="text-[11px] text-gray-500">Brahma 7.7 Ultra Demo. Verified logic & personalized intelligence active.</span>
+                    <span class="text-[11px] text-gray-500">Brahma Ultra. Verified logic & personalized intelligence active.</span>
                 </div>
             </div>
         </div>
@@ -687,7 +687,7 @@
                     content.innerHTML = `
                         <div class="w-full h-full flex flex-col items-center justify-center p-6 bg-dark-950 relative">
                             <div class="w-full max-w-3xl aspect-video bg-black rounded-xl border border-dark-700 shadow-2xl relative overflow-hidden group flex items-center justify-center">
-                                <img src="https://images.unsplash.com/photo-1675426513824-7667d022b313?q=80&w=1200&auto=format&fit=crop" class="w-full h-full object-cover opacity-60">
+                                <img src="" class="w-full h-full object-cover opacity-60">
                                 <button class="absolute z-10 w-16 h-16 bg-white/20 backdrop-blur rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
                                     <i data-lucide="play" class="w-8 h-8 text-white ml-1"></i>
                                 </button>
@@ -894,7 +894,7 @@
             aiMsg.innerHTML = `
                 <div class="flex gap-4 max-w-[90%] group items-start">
                     <div class="flex-shrink-0 w-8 h-8 rounded-full overflow-hidden mt-1 relative bg-black border border-dark-700 flex items-center justify-center p-1">
-                        <img src="img_arts\\brahma-removebg-preview.png" onerror="this.outerHTML='<div class=\\'w-full h-full fallback-logo\\'></div>'" class="w-full h-full object-contain">
+                        <img src="brahma-removebg-preview.png" onerror="this.outerHTML='<div class=\\'w-full h-full fallback-logo\\'></div>'" class="w-full h-full object-contain">
                     </div>
                     <div class="flex-1 min-w-0 pt-1">
                         <div id="content-${aiWrapperId}" class="text-gray-300 text-[15px] leading-relaxed font-sans">
@@ -967,7 +967,7 @@
             const t = text.toLowerCase();
             
             if (t.includes('code') || t.includes('html')) {
-                return `Here is the optimized structural implementation requested. I have utilized modern syntax principles based on Brahma 7.7 guidelines:\n\n\`\`\`javascript\nexport const initQuantumNode = async (config) => {\n  const { nodes, latency } = config;\n  return nodes.map(n => n.compute() * 1.618);\n};\n\`\`\`\n\nYou can click the \`Canvas\` tool in the attachment menu to visualize complex UI code directly.`;
+                return `Here is the optimized structural implementation requested. I have utilized modern syntax principles based on Brahma guidelines:\n\n\`\`\`javascript\nexport const initQuantumNode = async (config) => {\n  const { nodes, latency } = config;\n  return nodes.map(n => n.compute() * 1.618);\n};\n\`\`\`\n\nYou can click the \`Canvas\` tool in the attachment menu to visualize complex UI code directly.`;
             }
             if (t.includes('image') || t.includes('draw')) {
                 return "Initiating neural rendering protocol based on your prompt parameters...\n\n[simulated-image-enhanced]\n\n*Metadata: Ultra-realistic styling, volumetric lighting applied.*";
@@ -979,7 +979,7 @@
                 return "Based on a multi-step logical deduction, the optimal approach requires breaking down the core constraints. \n1. Identify initial parameters.\n2. Establish baseline context from personalized memory.\n3. Execute recursive refinement.\n\nLet me know if you want to explore this in the Canvas module.";
             }
 
-            return "I've analyzed your input. The Brahma 7.7 Ultra system is designed to handle this efficiently, leveraging memory and personalized context. Feel free to use the Advanced Tools (Video, Research, Canvas) via the attachment menu for multi-modal tasks.";
+            return "I've analyzed your input. The Brahma Ultra system is designed to handle this efficiently, leveraging memory and personalized context. Feel free to use the Advanced Tools (Video, Research, Canvas) via the attachment menu for multi-modal tasks.";
         }
 
         function formatAIResponse(text) {
@@ -988,7 +988,7 @@
             if (processed.includes('[simulated-image-enhanced]')) {
                 processed = processed.replace('[simulated-image-enhanced]', `
                     <div class="w-full max-w-md rounded-xl overflow-hidden border border-dark-700 my-3 relative group shadow-2xl animate-pop">
-                        <img src="https://images.unsplash.com/photo-1675426513824-7667d022b313?q=80&w=800&auto=format&fit=crop" class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700" alt="Generated Visual">
+                        <img src="" alt="Generated Visual">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 flex flex-col justify-end p-4 transition-opacity duration-300">
                             <span class="text-white text-[10px] font-mono mb-2 tracking-widest uppercase opacity-70">Gen-ID: ${Math.random().toString(36).substr(2,8).toUpperCase()}</span>
                             <div class="flex gap-2">
